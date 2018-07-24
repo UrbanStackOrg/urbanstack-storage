@@ -1,9 +1,9 @@
 /*
- * Copyright Morpheo Org. 2017
+ * Copyright UrbanStack Org. 2017
  *
- * contact@morpheo.co
+ * contact@urbanstack.co
  *
- * This software is part of the Morpheo project, an open-source machine
+ * This software is part of the UrbanStack project, an open-source machine
  * learning platform.
  *
  * This software is governed by the CeCILL license, compatible with the

@@ -1,9 +1,9 @@
 /*
- * Copyright Morpheo Org. 2017
+ * Copyright UrbanStack Org. 2017
  *
- * contact@morpheo.co
+ * contact@urbanstack.co
  *
- * This software is part of the Morpheo project, an open-source machine
+ * This software is part of the UrbanStack project, an open-source machine
  * learning platform.
  *
  * This software is governed by the CeCILL license, compatible with the
@@ -117,7 +117,7 @@ func NewStorageConfig() (conf *StorageConfig) {
 
 	flag.StringVar(&dbHost, "db-host", "postgres", "The hostname of the postgres database (default: postgres)")
 	flag.IntVar(&dbPort, "db-port", 5432, "The database port")
-	flag.StringVar(&dbName, "db-name", "db", "The database name (default: morpheo_storage)")
+	flag.StringVar(&dbName, "db-name", "db", "The database name (default: urbanstack_storage)")
 	flag.StringVar(&dbUser, "db-user", "u", "The database user (default: storage)")
 	flag.StringVar(&dbPass, "db-pass", "p", "The database password to use (default: tooshort)")
 

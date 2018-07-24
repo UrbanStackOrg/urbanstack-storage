@@ -1,9 +1,9 @@
 /*
- * Copyright Morpheo Org. 2017
+ * Copyright UrbanStack Org. 2017
  *
- * contact@morpheo.co
+ * contact@urbanstack.co
  *
- * This software is part of the Morpheo project, an open-source machine
+ * This software is part of the UrbanStack project, an open-source machine
  * learning platform.
  *
  * This software is governed by the CeCILL license, compatible with the
@@ -42,8 +42,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/MorpheoOrg/morpheo-go-packages/common"
-	. "github.com/MorpheoOrg/morpheo-storage/api"
+	"github.com/UrbanStackOrg/urbanstack-go-packages/common"
+	. "github.com/UrbanStackOrg/urbanstack-storage/api"
 	"github.com/satori/go.uuid"
 	"gopkg.in/kataras/iris.v6"
 	"gopkg.in/kataras/iris.v6/adaptors/httprouter"

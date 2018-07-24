@@ -1,7 +1,7 @@
-Morpheo: Storage API
+UrbanStack: Storage API
 ====================
 
-The Storage API for the [Morpheo](https://morpheoorg.github.io/morpheo/index.html)
+The Storage API for the [UrbanStack](https://urbanstackorg.github.io/urbanstack/index.html)
 platform *receives*, *stores* and *serves*:
  * **Algorithms** as `.tar.gz` files
  * **Datasets**
@@ -139,7 +139,7 @@ Usage of ./storage-api/target/storage-api:
   -db-port int
       The database port (default 5432)
   -db-name string
-      The database name (default: morpheo_storage) (default "morpheo_storage")
+      The database name (default: urbanstack_storage) (default "urbanstack_storage")
   -db-user string
       The database user (default: storage) (default "storage")
   -db-pass string
@@ -167,5 +167,4 @@ Maintainers
 -----------
 
 * Étienne Lafarge <etienne_at_rythm.co>
-* Max-Pol Le Brun <maxpol_at_morpheo.co>
-# urbanstack-storage
+* Max-Pol Le Brun <maxpol_at_urbanstack.co>

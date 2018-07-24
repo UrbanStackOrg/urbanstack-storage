@@ -1,11 +1,11 @@
 [[constraint]]
-  name = "github.com/MorpheoOrg/morpheo-go-packages"
+  name = "github.com/UrbanStackOrg/urbanstack-go-packages"
   branch = "master"
 
 [[constraint]]
   name = "gopkg.in/kataras/iris.v6"
   version = "6.2.0"
-  source = "https://github.com/MorpheoOrg/iris.git"
+  source = "https://github.com/UrbanStackOrg/iris.git"
 
 [[override]]
   name = "github.com/russross/blackfriday"

@@ -1,9 +1,9 @@
 #
-# Copyright Morpheo Org. 2017
+# Copyright UrbanStack Org. 2017
 #
-# contact@morpheo.co
+# contact@urbanstack.co
 #
-# This software is part of the Morpheo project, an open-source machine
+# This software is part of the UrbanStack project, an open-source machine
 # learning platform.
 #
 # This software is governed by the CeCILL license, compatible with the
@@ -34,7 +34,7 @@
 #
 
 # User defined variables (use env. variables to override)
-DOCKER_REPO ?= registry.morpheo.io
+DOCKER_REPO ?= registry.urbanstack.io
 DOCKER_TAG ?= latest
 
 # Targets (files & phony targets)
@@ -59,7 +59,7 @@ clean: docker-clean bin-clean vendor-clean
 		docker docker-clean $(DOCKER_TARGETS) $(DOCKER_CLEAN_TARGETS)
 
 # 1. Building
-%/build/target: %/*.go # ../morpheo-go-packages/common/*.go ../morpheo-go-packages/client/*.go
+%/build/target: %/*.go # ../urbanstack-go-packages/common/*.go ../urbanstack-go-packages/client/*.go
 	@echo "Building $(subst /build/target,,$(@)) binary..........................................................."
 	@mkdir -p $(@D)
 	@CGO_ENABLED=0 GOOS=linux go build -a --installsuffix cgo --ldflags '-extldflags \"-static\"' -o $@ ./$(dir $<)
@@ -78,11 +78,11 @@ vendor-update:
 	dep ensure -update
 
 vendor-replace-local:
-	@echo "Replacing vendor/github.com/MorpheoOrg by local repository..."
-	@rm -rf ./vendor/github.com/MorpheoOrg
-	@mkdir -p ./vendor/github.com/MorpheoOrg
-	@cp -Rf ../morpheo-go-packages ./vendor/github.com/MorpheoOrg/morpheo-go-packages
-	@rm -rf ./vendor/github.com/MorpheoOrg/morpheo-go-packages/vendor
+	@echo "Replacing vendor/github.com/UrbanStackOrg by local repository..."
+	@rm -rf ./vendor/github.com/UrbanStackOrg
+	@mkdir -p ./vendor/github.com/UrbanStackOrg
+	@cp -Rf ../urbanstack-go-packages ./vendor/github.com/UrbanStackOrg/urbanstack-go-packages
+	@rm -rf ./vendor/github.com/UrbanStackOrg/urbanstack-go-packages/vendor
 
 # 3. Testing
 tests: vendor-replace-local

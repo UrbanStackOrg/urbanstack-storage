@@ -35,7 +35,7 @@
 [[projects]]
   branch = "master"
   digest = "1:d2bc87fdcda231ca39fbe405db838be1e5d97f996acb45a89032e54be007a3f1"
-  name = "github.com/MorpheoOrg/morpheo-go-packages"
+  name = "github.com/UrbanStackOrg/urbanstack-go-packages"
   packages = ["common"]
   pruneopts = ""
   revision = "9ad26b389825c46ca0544007e10bf3b46cce19fd"
@@ -670,7 +670,7 @@
   ]
   pruneopts = ""
   revision = "09a2066268f99fc8ee40ecddde8b415f76250f4b"
-  source = "https://github.com/MorpheoOrg/iris.git"
+  source = "https://github.com/UrbanStackOrg/iris.git"
   version = "v6.2"
 
 [[projects]]
@@ -685,7 +685,7 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/MorpheoOrg/morpheo-go-packages/common",
+    "github.com/UrbanStackOrg/urbanstack-go-packages/common",
     "github.com/fatih/structs",
     "github.com/jmoiron/sqlx",
     "github.com/lib/pq",
