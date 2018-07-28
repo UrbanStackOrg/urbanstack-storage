@@ -34,11 +34,19 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:d2bc87fdcda231ca39fbe405db838be1e5d97f996acb45a89032e54be007a3f1"
+  digest = "1:8231650f32056a939a147c79b31ddfb7063f4c5ebaf791d35d840f3ac1c308ba"
   name = "github.com/UrbanStackOrg/urbanstack-go-packages"
   packages = ["common"]
   pruneopts = ""
-  revision = "9ad26b389825c46ca0544007e10bf3b46cce19fd"
+  revision = "12a58d18babde93e2a1ae0137574c6e5f371e13b"
+
+[[projects]]
+  branch = "master"
+  digest = "1:8600a46d1c01bcfebd4b0bbb2258f8493b7c2dfee7b4349d5e165455a7dbef16"
+  name = "github.com/UrbanStackOrg/urbanstack-storage"
+  packages = ["api"]
+  pruneopts = ""
+  revision = "cdfe986916236ca6f6559c2a31f76f7247380787"
 
 [[projects]]
   digest = "1:9ceecb4271682fd824475d451b6abf02b99ad04e72f8de3408a9d8b7fd15b933"
@@ -686,6 +694,7 @@
   analyzer-version = 1
   input-imports = [
     "github.com/UrbanStackOrg/urbanstack-go-packages/common",
+    "github.com/UrbanStackOrg/urbanstack-storage/api",
     "github.com/fatih/structs",
     "github.com/jmoiron/sqlx",
     "github.com/lib/pq",
